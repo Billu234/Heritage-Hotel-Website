@@ -1,6 +1,6 @@
-# [Project name]
+# The Heritage Hotel
 
-_Replace the heading above with the project's name, and this line with one sentence describing what this app does for users._
+An image-led hotel website presenting The Heritage as a place to stay, dine, and gather.
 
 ## Run & Operate
 
@@ -22,15 +22,18 @@ _Replace the heading above with the project's name, and this line with one sente
 
 ## Where things live
 
-_Populate as you build — short repo map plus pointers to the source-of-truth file for DB schema, API contracts, theme files, etc._
+- `artifacts/heritage-hotel/src/App.tsx` — public hotel landing page and navigation.
+- `artifacts/heritage-hotel/src/index.css` — page styling, responsive layout, and motion.
+- `artifacts/heritage-hotel/public/images/` — the eleven supplied hotel photographs.
 
 ## Architecture decisions
 
-_Populate as you build — non-obvious choices a reader couldn't infer from the code (3-5 bullets)._
+- The hotel page is static; calls and directions link to the supplied public hotel phone number and address.
+- Do not invent rates or hotel amenities that have not been supplied.
 
 ## Product
 
-_Describe the high-level user-facing capabilities of this app once they exist._
+The page showcases hotel rooms, dining, a celebration space, lounge seating, and nearby waterside views, and lists the supplied restaurant, parking, Wi-Fi, check-in/out times, guest services, and meeting and banquet facilities. Visitors can call the hotel or open directions to its supplied location in Ratahara, Rewa.
 
 ## User preferences
 

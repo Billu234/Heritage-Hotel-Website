@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Heritage Hotel"
+description = "A polished hotel website showcasing guest rooms, dining, and event spaces through the provided photography, with clear contact and booking inquiry paths."
+version = "1.0.0"
+id = "artifacts/heritage-hotel"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 25629
+
+[services.development]
+run = "pnpm --filter @workspace/heritage-hotel run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/heritage-hotel", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/heritage-hotel/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "25629"
+BASE_PATH = "/"
