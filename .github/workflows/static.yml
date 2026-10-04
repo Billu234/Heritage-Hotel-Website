@@ -37,10 +37,10 @@ jobs:
         run: pnpm install --no-frozen-lockfile
 
       - name: Build Heritage Hotel
-        working-directory: artifacts/Heritage-hotel
+        working-directory: artifacts/heritage-hotel
         env:
           PORT: 4173
-          BASE_PATH: /Heritage-Hotel/
+          BASE_PATH: /Heritage-Hotel-Website/
         run: pnpm run build
 
       - name: Setup Pages
@@ -49,7 +49,7 @@ jobs:
       - name: Upload website
         uses: actions/upload-pages-artifact@v3
         with:
-          path: artifacts/Heritage-hotel/dist/public
+          path: artifacts/heritage-hotel/dist/public
 
       - name: Deploy to GitHub Pages
         id: deployment
