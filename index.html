@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heritage Hotel</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #111;
+      color: white;
+    }
+
+    header {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 30px;
+      background:
+        linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.75)),
+        url("https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=2000&q=80")
+        center/cover;
+    }
+
+    .hero {
+      max-width: 800px;
+    }
+
+    h1 {
+      font-size: 60px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 1.6;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 28px;
+      margin: 8px;
+      border-radius: 30px;
+      background: #d4af37;
+      color: #111;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .section {
+      padding: 70px 20px;
+      text-align: center;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      margin-top: 35px;
+    }
+
+    .card {
+      width: 280px;
+      padding: 30px;
+      background: #222;
+      border-radius: 15px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #080808;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 40px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="hero">
+      <h1>Heritage Hotel</h1>
+      <p>
+        Experience comfort, elegance and unforgettable hospitality.
+      </p>
+
+      <a href="#rooms" class="btn">Explore Rooms</a>
+      <a href="#contact" class="btn">Contact Us</a>
+    </div>
+  </header>
+
+  <section class="section" id="rooms">
+    <h2>Our Rooms</h2>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Deluxe Room</h3>
+        <p>Comfortable and beautifully designed rooms for a relaxing stay.</p>
+      </div>
+
+      <div class="card">
+        <h3>Luxury Suite</h3>
+        <p>Premium space with elegant interiors and modern facilities.</p>
+      </div>
+
+      <div class="card">
+        <h3>Family Room</h3>
+        <p>Spacious accommodation designed for families and groups.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <p>Book your stay and experience Heritage Hotel.</p>
+
+    <a href="tel:+919999999999" class="btn">Call Now</a>
+  </section>
+
+  <footer>
+    © 2026 Heritage Hotel. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
